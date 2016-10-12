@@ -19,7 +19,7 @@ def break_words
     
 end
 def sort_words
-    x=["arun","varun"]
+    x=["var","arun"]
     puts x.sort
 end
 def print_first_word
@@ -31,7 +31,7 @@ def print_last_word
     puts z.last
 end
 def sort_sentence
-    w=["hello","how you"]
+    w=["hello","how are u"]
     puts w.sort
 end
 def print_first_and_last_word_in_a_sentence
@@ -40,15 +40,18 @@ def print_first_and_last_word_in_a_sentence
     puts a.join('').split.last
 end
 def print_sorted_first_and_last_word_in_a_sentence
-    c="i am good"
+    c="today is monday"
     puts c.split(" ").sort.first
     puts c.split(" ").sort.last
     
     # puts c.join('').sort
 end
-endclass Sentence
+end
+
+class Sentence
 include Things_i_can_do_with_a_sentence
-ends=Sentence.new
+end
+s=Sentence.new
 s.break_words
 s.sort_words
 s.print_first_word

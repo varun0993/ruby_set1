@@ -1,11 +1,11 @@
 class Parent  
    def initialize  
    
- end  
- def fatherName
-   # puts 'I am the Father.'      @fatherName="Thomas"
-   puts @fatherName 
-    end 
+ end 
+  def fatherName
+ @fatherName="Thomas"
+   puts @fatherName  
+end 
     def motherName
    # puts 'I am the Mother.'
  
@@ -30,7 +30,8 @@ class Son < Parent
    puts "my full name is -->"
    puts "#{@firstName} #{@motherName} #{@fatherName}"
  end
-end# Class Son is sub-Class of Mother   # instantiate an object and print his firstName, secondName, lastName fullName.
+end
+# Class Son is sub-Class of Mother   # instantiate an object and print his firstName, secondName, lastName fullName.
 s=Son.new# s.fatherName
 # s.motherName
 s.fullName
